@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PSB GEM HOLZ</title>
+        
+        <!-- metas -->
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <title>{% block title %}{% endblock title %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <!--/ metas -->
+        
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+        <!--/ favicon -->
+        
+        <!-- styles -->
+        <link rel="stylesheet" href="{{config.url}}/themes/{{config.theme}}/css/font-awesome.css">
+        <link rel="stylesheet" href="{{config.url}}/themes/{{config.theme}}/css/jquery.fancybox.css">
+        <link rel="stylesheet" href="{{config.url}}/themes/{{config.theme}}/css/jquery.owl.carousel.css">
+        <link rel="stylesheet" href="{{config.url}}/themes/{{config.theme}}/js/rs-plugin/css/settings.css">
+        <link rel="stylesheet" href="{{config.url}}/themes/{{config.theme}}/css/main.css">
+        <link rel="stylesheet" href="{{config.url}}/themes/{{config.theme}}/css/color.css">
+        <!--/ styles -->
+        {% block pagestyle %}{% endblock %}
+    </head>
+    
+    <body>
+        <div class="page">
+            <!-- page header top -->
+            <div id="page-header-top" class="page-header-top">
+            </div>
+            <!--/ page header top -->
+            
+            <!-- page header bottom -->
+            
+            {% include "layout/mainmenu.html.twig" %}
+
+            <div></div>
+            <!--/ page header bottom -->
+            
+            <!-- slideshow -->
+            {% block pageslider %}{% endblock pageslider %}
+            <!--/ slideshow -->
+            
+
+            <!-- page intro -->
+            {# где есть интро там не должно быть слайдера #}
+            {% block page_intro %}{% endblock page_intro %}
+            <!--/ page intro -->
+
+
+            <!-- page content -->
+            <div class="page-content">
+
+                <!-- page content section -->
+                {% block page_section %}{% endblock %}
+                <!--/ page content section -->
+
+{# INDEX PAGE BLOKS #}
+{# Блоки с позитивным перечислением #}
+{#% block page_section_1 %}{% endblock %#}
+
+{# ГЛАВНАЯ#}
+{% block page_section_3 %}{% endblock %}
+
+{# счетчик позитива #}
+{#% block page_section_2 %}{% endblock %#}
+
+
+{# Фотогалерея #} 
+{#% block page_section_4 %}{% endblock %#}
+
+{# ПАРТНЕРЫ#}
+{% block page_section_5 %}{% endblock %}
+
+{# блок из 2 колонок #}
+{#% block page_section_6 %}{% endblock %#}
+
+<!-- page content section -->
+{% if show_section == 1 %}
+    
+{% endif %}
+<!--/ page content section -->
+
+<!-- page content section -->
+{# счетчик ниших показателей #}
+{% if show_section == 2 %}
+    
+{% endif %}
+<!--/ page content section -->
+
+<!-- page content section -->
+{% if show_section != 33 %}
+    
+    {# Always show third block #}
+    {#% block page_section_3 %}{% endblock %#}
+{% endif %}
+
+<!--/ page content section -->
+
+<!-- page content section -->
+{% if show_section == 4 %}
+    
+{% endif %}
+<!--/ page content section -->
+
+<!-- page content section -->
+{% if show_section == 5 %}
+    
+{% endif %}
+<!--/ page content section -->
+
+<!-- page content section -->
+{# MOBILE READY page part column #}
+{% if show_section == 6 %}
+    
+{% endif %}
+<!--/ page content section -->
+{# end INDEX PAGE BLOCKs #}
+
+            </div>
+            <!--/ page content -->
+
+            <!-- page footer -->
+            <footer class="page-footer">
+                {% include "layout/footer.html.twig" %}
+            </footer>
+            <!--/ page footer -->
+        </div>
+        
+        <!-- scripts -->
+        <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery-ui.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.counter.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.knob.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.form.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.isotope.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.validate.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.countdown.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.fancybox.pack.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.fancybox-media.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.imagesloaded.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.owl.carousel.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+        <!--[if lt IE 10]><script src="js/jquery.placeholder.min.js"></script><![endif]-->
+        <script src="{{config.url}}/themes/{{config.theme}}/js/main.js"></script>
+        <!--/ scripts -->
+    </body>
+</html>
+

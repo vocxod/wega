@@ -1,0 +1,114 @@
+{% extends "layout/layout.html.twig" %}
+	
+{% block title %}
+	{% if lang == 'en' %}
+		PSB GEM HOLZ:Links
+	{% endif %}
+	{% if lang == 'ru' %}
+		PSB GEM HOLZ:Ссыдки
+	{% endif %}
+{% endblock %}
+
+{% block page_intro %}
+	{% if lang=='ru' %}
+			<div class="page-intro">
+				<div class="pic" style="background-image: url('/content/media/2000x316xlinks_ru.jpg')"></div>
+				
+				<div class="grid-row clearfix">
+					<div class="page-title">ЗАО ПСБ-ГЭМ-ХОЛЬЦ</div>
+					<div class="page-subtitle">Полезные ссылки.</div>
+					<div class="bread-crumbs"><a href="/">Главная</a> - Ссылки</div>
+				</div>
+			</div>
+	{% endif %}
+	{% if lang=='en' %}
+			<div class="page-intro">
+				<div class="pic" style="background-image: url('/content/media/2000x316xlinks_en.jpg')"></div>
+				
+				<div class="grid-row clearfix">
+					<div class="page-title">JSC PSB-GEM-HOLZ</div>
+					<div class="page-subtitle">Usefull links. </div>
+					<div class="bread-crumbs"><a href="/">Home</a> - Links</div>
+				</div>
+			</div>
+	{% endif %}	
+{% endblock %}
+
+{% block page_section %}
+	{% if lang == 'en' %}
+	<div class="grid-row">
+	<div class="block block-catalog-list">
+				<ul>
+					<li>
+						<a href="http://fsc.ru/" class="pic" target="_blank">
+							<img src="/content/media/220x220_fsc_logo.jpg" width="220" height="220" alt="">
+						</a>
+						{#<div class="badge"><span>Top</span></div>#}
+						<div class="price">FSC Лесной попечительский совет</div>
+						<h3>&nbsp;</h3>
+						<p>Международный Лесной попечительский совет (FSC AC) представляет собой ассоциацию членов. Согласно Уставу FSC AC в составе организации могут быть национальные офисы, представляющие интересы FSC AC в определенной стране. .</p>
+						
+						<div class="actions">
+							<a href="http://fsc.ru/" class="more" target="_blank">Перейти по ссылке</a>
+							{#}
+							<a href="#"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+							<div class="rating"><div style="width:60%"></div></div>
+							<span>Technology</span>
+							#}
+						</div>
+					</li>
+					<li>
+						<a href="http://www.pefc.ru" class="pic" target="_blank">
+							<img src="/content/media/220x220_links_pefc.jpg" width="220" height="220" alt="">
+						</a>				
+						<div class="price">Система добровольной лесной сертификации</div>
+						<h3>&nbsp;</h3>
+						<p>Добровольная лесная сертификация – система таких мер, развивающаяся во многих лесных странах мира. Представляем Вам российскую систему добровольной лесной сертификации – FCR.</p>
+						<div class="actions">
+							<a href="http://www.pefc.ru" class="more" target="_blank">Перейти по ссылке</a>
+						</div>
+					</li>
+				</ul>
+		{#<a href="#" class="button">Load More Products</a>#}
+	</div>
+	</div>
+
+	{% endif %}
+
+	{% if lang == 'ru' %}
+	<div class="block block-catalog-list">
+		<ul>
+			<li>
+				<a href="http://fsc.ru/" class="pic" target="_blank">
+					<img src="/content/media/220x220_fsc_logo.jpg" width="220" height="220" alt="">
+				</a>
+				{#<div class="badge"><span>Top</span></div>#}
+				<div class="price">FSC Лесной попечительский совет</div>
+				<h3>&nbsp;</h3>
+				<p>Международный Лесной попечительский совет (FSC AC) представляет собой ассоциацию членов. Согласно Уставу FSC AC в составе организации могут быть национальные офисы, представляющие интересы FSC AC в определенной стране. .</p>
+				
+				<div class="actions">
+					<a href="http://fsc.ru/" class="more" target="_blank">Перейти по ссылке</a>
+					{#}
+					<a href="#"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+					<div class="rating"><div style="width:60%"></div></div>
+					<span>Technology</span>
+					#}
+				</div>
+			</li>
+			<li>
+				<a href="http://www.pefc.ru" class="pic" target="_blank">
+					<img src="/content/media/220x220_links_pefc.jpg" width="220" height="220" alt="">
+				</a>				
+				<div class="price">Система добровольной лесной сертификации</div>
+				<h3>&nbsp;</h3>
+				<p>Добровольная лесная сертификация – система таких мер, развивающаяся во многих лесных странах мира. Представляем Вам российскую систему добровольной лесной сертификации – FCR.</p>
+				<div class="actions">
+					<a href="http://www.pefc.ru" class="more" target="_blank">Перейти по ссылке</a>
+				</div>
+			</li>
+		</ul>
+		{#<a href="#" class="button">Load More Products</a>#}
+	</div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,140 @@
+{% extends "layout/layout.html.twig" %}
+	
+{% block title %}
+	{% if lang == 'en' %}
+		PSB GEM HOLZ:About
+	{% endif %}
+	{% if lang == 'ru' %}
+		PSB GEM HOLZ:О компании
+	{% endif %}
+{% endblock %}
+
+{% block page_intro %}
+	{% if lang=='ru' %}
+	<div class="page-intro">
+	    {#<div class="pic" style="background-image: url('/content/media/2000x316xabout.jpg')"></div>#}
+	    <div class="pic" style="background-image: url('/content/media/2000x316xmap_ru.jpg')"></div>
+
+	    <div class="grid-row clearfix">
+	        <div class="page-title">ЗАО "ПСБ-ГЭМ-ХОЛЬЦ"</div>
+	        <div class="page-subtitle">История компании</div>
+	        {#<div class="bread-crumbs"><a href="/">Главная</a> - О Компании</div>#}
+	    </div>
+	</div>
+	{% endif %}
+	{% if lang=='en' %}
+	<div class="page-intro">
+		<div class="pic" style="background-image: url('/content/media/2000x316xmap_en.jpg')"></div>
+	    {#<div class="pic" style="background-image: url('/content/media/2000x316xabout.jpg')"></div>#}
+	    
+	    <div class="grid-row clearfix">
+	        <div class="page-title">JSC "PSB-GEM-HOLZ"</div>
+	        <div class="page-subtitle">History</div>
+	        {#<div class="bread-crumbs"><a href="/">Home</a> - About</div>#}
+	    </div>
+	</div>
+	{% endif %}	
+{% endblock %}
+
+{% block page_section %}
+	{% if lang=='ru' %}
+	<div class="page-content-section">
+		<div class="grid-row">						
+			<!-- about -->
+			<div class="block block-about-6">
+				<div class="block-cont clearfix">
+					<div class="grid-col grid-col-right grid-col-4">
+						<img src="/content/media/370x310_history_1.jpg" width="370" height="310" alt="">
+						<div class="shadow"></div>
+					</div>
+					<div class="grid-col grid-col-right grid-col-8">
+						{#<h3>Заголовок на странице</h3>#}
+<p style="line-height:2.5em;">
+Компания была основана в 1995 году в форме Российско-Германского совместного предприятия. Направление деятельности немецкого партнера, компании  Palettenfabrik Bassum – крупнейшего производителя поддонов в Германии, с самого начала основания определило высокие стандарты качества изготавливаемой продукции и неукоснительное выполнение требований к срокам изготовления и доставки товара покупателю. 
+</p>
+
+					</div>
+				</div>
+
+				<div class="block-cont clearfix">
+					
+					<div class="grid-col grid-col-left grid-col-4">
+						<img src="/content/media/370x310_history_2.jpg" width="370" height="310" alt="">
+						<div class="shadow"></div>
+					</div>
+
+					<div class="grid-col grid-col-left grid-col-8">
+						{#<h3>Заголовок на странице</h3>#}
+<p>
+ Предприятие сотрудничает с большинством крупных логистических компаний Санкт-Петербурга,  которые способны обеспечить доставку товара в любую точку мира.  Компания входит в список лучших поставщиков своей продукции по рейтингам наших покупателей.
+</p>
+
+					</div>
+					
+
+
+				</div>
+
+
+				<div class="block-cont clearfix">
+					
+					<div class="grid-col grid-col-left grid-col-4">
+						<img src="/content/media/370x310_history_3.jpg" width="370" height="310" alt="">
+						<div class="shadow"></div>
+					</div>
+
+
+					<div class="grid-col grid-col-left grid-col-4">
+						<img src="/content/media/370x310_history_4.jpg" width="370" height="310" alt="">
+						<div class="shadow"></div>
+					</div>
+
+					<div class="grid-col grid-col-left grid-col-4">
+						<img src="/content/media/370x310_history_5.jpg" width="370" height="310" alt="">
+						<div class="shadow"></div>
+					</div>
+
+				</div>
+
+
+
+				<div class="icons">
+					<a href="#" class="fa fa-facebook-square"></a><!--
+					--><a href="#" class="fa fa-twitter-square"></a>
+				</div>
+
+			</div>
+			<!--/ about -->
+		</div>
+	</div>
+	{% endif %}	
+	{% if lang=='en' %}
+	<div class="page-content-section">
+		<div class="grid-row">						
+			<!-- about -->
+			<div class="block block-about-6">
+				<div class="block-cont clearfix">
+					<div class="grid-col grid-col-right grid-col-4">
+						<img src="/content/media/370x310xabout.jpg"  width="370" height="310" alt="">
+						<div class="shadow"></div>
+					</div>
+					<div class="grid-col grid-col-right grid-col-8">
+<p>
+Лесопильное производство ЗАО «ПСБ ГЭМ Хольц» - это полностью автоматизированная фрезерно-брусующая линия производства компании Ari Vislanda (Sweden), способная переработать до 400 м3 сырья в одну смену с оптимизацией параметров распила на основании построения 3D модели каждого бревна (сканирование). Все поступающее на предприятие сырье сортируется по диаметрам и складируется на территории до поступления в лесопильный цех.
+<br>
+ Склад готовой продукции располагается под навесом таким образом, чтобы готовая продукция не подвергалась воздействию атмосферных осадков с момента складирования до момента отгрузки в адрес покупателя.
+</p>
+						<div class="icons">
+							<a href="#" class="fa fa-facebook-square"></a><!--
+							--><a href="#" class="fa fa-twitter-square"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ about -->
+		</div>
+	</div>
+	{% endif %}	
+
+{% endblock %}
+

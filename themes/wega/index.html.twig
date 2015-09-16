@@ -1,0 +1,351 @@
+{% extends "layout/layout.html.twig" %}
+
+{% block title %}
+PSB GEM HOLZ
+{% endblock %}
+
+{% block content %}
+    {{page.Content}}
+{% endblock %}
+
+{% block pageslider %}
+    {% include "layout/slider.html.twig" %}
+{% endblock %}
+
+{# квадратики преимуществ с иконками #}
+{% block page_section_1 %}
+    <div class="page-content-section">
+        <div class="grid-row">
+            <!-- benefits -->
+            <div class="block block-benefits">
+                <ul>
+                    <li>
+                        <div>
+                            <i class="fa fa-apple"></i>
+                            <h3>Заготовка по правилам FSC</h3>
+                            <p>На протяжении нескольких лет наша компания является {#сертифицированний стандартам и правилам организации FSC. {#Мы ежегодно проводим сертификацию нашего производства и бизнес-процессов бережного лесопользования.#}</p>
+                        </div>
+                    </li><!--
+                        --><li>
+                        <div>
+                            <i class="fa fa-cog"></i>
+                            <h3>Хранение сырья</h3>
+                            <p>Вместительный склад компании обеспечиват ритмичную и бесперебойную работу.</p>
+                        </div>
+                    </li><!--
+                        --><li>
+                        <div>
+                            <i class="fa fa-rocket"></i>
+                            <h3>Производство</h3>
+                            <p>Наше производтство построено на основе современного деревообрабатывающего оборудования {#шведской компании. {#Оборудование позволяет производить огромный ассортимент продукции по спецификации заказчика.#}</p>
+                        </div>
+                    </li><!--
+                        --><li>
+                        <div>
+                            <i class="fa fa-clock-o"></i>
+                            <h3>Щепа</h3>
+                            <p>Вы производим щепу. Производство щепы позволяет наиболее полно использовать сырье, снижая загрязнение окружающей среды.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--/ benefits -->
+            
+            <!-- apps features -->
+            <div class="block block-apps-features">
+                <div class="clearfix">
+                    <div class="grid-col grid-col-5">
+                        <img src="/content/media/325x663.jpg" width="325" height="663" alt="">
+                    </div>
+                    <div class="grid-col grid-col-2"></div>
+                    <div class="grid-col grid-col-5">
+                        <h2>ЗАО "PSB GEM HOLZ"</h2>
+                        <ul>
+                            <li><i class="fa fa-share"></i>Склад</li>
+                            <li><i class="fa fa-share"></i>FSC стандарты</li>
+                            <li><i class="fa fa-share"></i>Объемы и качество</li>
+                            <li><i class="fa fa-share"></i>Квалифицированный персонал</li>
+                            <li><i class="fa fa-share"></i>Сопровождение заказа</li>
+                            <li><i class="fa fa-share"></i>Широкий ассортимент</li>
+                            <li><i class="fa fa-share"></i>Различные породы дерева</li>
+                            <li><i class="fa fa-share"></i>Современное оборудование</li>
+                        </ul>
+                        {#}
+                        <a href="#" class="button"><i class="fa fa-cloud-download"></i>Buy It Now<span>only 16$</span></a>
+                        <div class="enviroiment">
+                            <span>Select your enviroiment</span>
+                            <a href="#"><i class="fa fa-apple"></i></a>
+                            <a href="#"><i class="fa fa-android"></i></a>
+                            <a href="#"><i class="fa fa-windows"></i></a>
+                        </div>
+                        #}
+                    </div>
+                </div>
+            </div>
+            <!--/ apps features -->
+        </div>
+    </div>
+{% endblock page_section_1 %}
+
+{# счетчик наших достижений #}
+{% block page_section_2 %}
+    <div class="page-content-section-bg" style="background-image: url(/content/media/2000x260.jpg)">
+        <div class="grid-row">
+            <!-- counters -->
+            <div id="block-counters" class="block block-counters">
+                <ul>
+                    <li>
+                        <div>
+                            <span class="counter" data-direction="up" data-interval="5" data-format="75">000</span>
+                        </div>
+                        Сотрудников
+                    </li><!--
+                    --><li>
+                        <div>
+                            <span class="counter" data-direction="up" data-interval="2" data-format="365">000</span>
+                        </div>
+                        Дней в работе
+                    </li><!--
+                    --><li>
+                        <div>
+                            <span class="counter" data-direction="up" data-interval="7" data-format="100">000</span><sub>+</sub>
+                        </div>
+                        Довольных клиентов
+                    </li><!--
+                    --><li>
+                        <div>
+                            <span class="counter" data-direction="up" data-interval="5" data-format="150">000</span>
+                        </div>
+                        Новых покупателей
+                    </li><!--
+                    --><li>
+                        <div>
+                            <span class="counter" data-direction="up" data-interval="14" data-format="50">00</span><sub>+</sub>
+                        </div>
+                        Наград и признаний
+                    </li>
+                </ul>
+            </div>
+            <!--/ counters -->
+        </div>
+    </div>
+{% endblock page_section_2 %}
+
+{# welcome #}
+{% block page_section_3 %}
+    <div class="page-content-section">
+        <div class="grid-row">
+            <!-- about -->
+            <div class="block block-about">
+                <div class="block-head block-head-2">ЗАО "PSB GEM HOLZ"<i></i></div>
+                <div class="block-cont">
+                    <h2>Добро пожаловать</h2>
+                    {#}
+                    <p>
+                    	Закрытое Акционерное Общество "ПСБ-ГЭМ-Хольц" специализируется в деревообработке и производстве изделий из древесины на экспорт. Предприятие обладает многолетней деловой репутацией стабильного торгового партнера на рынках Германии, Великобритании, Голландии, Финляндии. Основной принцип компании – безукоризненное соблюдение всех условий контракта. Площадки производства располагаются на территории Санкт-Петербурга. Это определяет ориентацию предприятия на строгое соблюдение законодательства, экологических стандартов и технологическую дисциплину. Персонал компании – это дружный коллектив, где каждый разделяет корпоративную этику и нацелен на удовлетворение высоких требований европейского потребителя. 
+                    </p>
+                    #}
+                    <p style="text-align:left;">
+ЗАО "ПСБ-ГЭМ-ХОЛЬЦ" является одним из крупнейших производителей  пиломатериалов в Северо-Западном Федеральном Округе Российской Федерации. В настоящее время в компании работают 75 сотрудников. <br> Площадка основного производства компании расположена в Санкт-Петербурге – одном из крупнейших индустриальном центров России.
+Высокотехнологичное лесопильное оборудование позволяет произвести около 60 000 м3 высококачественных хвойных пиломатериалов в год при односменной работе. <br>  Основная часть производимых пиломатериалов используется нашими покупателями для производства поддонов и прочих видов упаковочной тары. <br>
+ЗАО "ПСБ-ГЭМ-ХОЛЬЦ" неоднократно отмечено наградами в номинации "Лучших предприятий России в области внешнеэкономической деятельности" 2014 г. совета национальных бизнес-рейтингов.
+                    </p>
+
+                    {#
+                    <a href="#" class="button">Read More</a>
+                    #}
+                    {#
+                    <div class="owl-slideshow">
+                      <div><img src="/content/media/1170x390.jpg" alt=""></div>
+                      <div><img src="/content/media/1170x390.jpg" alt=""></div>
+                      <div><img src="/content/media/1170x390.jpg" alt=""></div>
+                      <div><img src="/content/media/1170x390.jpg" alt=""></div>
+                    </div>
+                    #}
+                </div>
+            </div>
+            <!--/ about -->
+        </div>
+    </div>
+{% endblock page_section_3 %}
+
+{# фотогалерея #}
+{% block page_section_4 %}
+    <div class="page-content-section">
+        <div class="grid-row">
+            <!-- recent works -->
+            <div class="block block-recent-works">
+                <div class="block-head block-head-2">Фотогалерея<i></i></div>
+                <div class="block-cont">
+                    <ol>
+                        <li data-filter="*" class="active">Все</li><!--
+                        --><li data-filter=".item-web">Склад</li><!--
+                        --><li data-filter=".item-brand">Производства</li><!--
+                        --><li data-filter=".item-design">Отгрузка</li><!--
+                        --><li data-filter=".item-arch">Щепа</li>
+                    </ol>
+                    
+                    <ul>
+                        <li class="item item-large item-design">
+                            <img src="/content/media/468x234.jpg" alt="">
+                            <div class="description">
+                                <h3>Производство 1</h3>
+                                <p>Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. </p>
+                            </div>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                        <li class="item item-arch item-web">
+                            <img src="/content/media/234x234.jpg" alt="">
+                            <div class="description">
+                                <h3>Производство 2</h3>
+                                <p>Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. </p>
+                            </div>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                        <li class="item item-brand item-design">
+                            <img src="/content/media/234x234.jpg" alt="">
+                            <div class="description">
+                                <h3>Производство 3</h3>
+                                <p>Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. </p>
+                            </div>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                        <li class="item item-web item-brand">
+                            <img src="/content/media/234x234.jpg" alt="">
+                            <div class="description">
+                                <h3>Производство 4</h3>
+                                <p>Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. </p>
+                            </div>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                        <li class="item item-small item-design item-arch">
+                            <img src="/content/media/234x234.jpg" alt="">
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                        <li class="item item-large item-web item-arch">
+                            <img src="/content/media/468x234.jpg" alt="">
+                            <div class="description">
+                                <h3>Производство 5</h3>
+                                <p>Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. Наш производственный процесс. </p>
+                            </div>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                        <li class="item item-small item-design item-brand">
+                            <img src="/content/media/234x234.jpg" alt="">
+                            <a href="#"><i class="fa fa-search"></i></a>                                    
+                        </li>                           
+                        <li class="item item-small item-web item-brand">
+                            <img src="/content/media/234x234.jpg" alt="">
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/ recent works -->
+        </div>
+    </div>
+{% endblock page_section_4 %}
+
+{% block page_section_5 %}
+    <div class="page-content-section">
+        <div class="grid-row">
+            <!-- clients -->
+            <div class="block block-clients">
+                <div class="block-head block-head-2">Партнеры<i></i></div>
+                <div class="block-cont">
+                    <p>Представляем Вам наших некоторых партнеров, которые являются активными потребителями нашей продукции в разных странах.</p>
+<div class="carousel">
+<div>
+<a href="http://www.bassum.com/en/company/index.php" target="_blank"><img src="/content/media/partner_000.jpg" width="120" height="90" alt=""></a>
+</div>
+<div>
+<a href="#" target="_blank"><img src="/content/media/partner_001.jpg" width="120" height="90" alt=""></a>
+</div>
+<div>
+<a href="#" target="_blank"><img src="/content/media/partner_002.jpg" width="120" height="90" alt=""></a>
+</div>
+<div>
+<a href="#" target="_blank"><img src="/content/media/partner_003.jpg" width="120" height="90" alt=""></a>
+</div>
+<div>
+<a href="#" target="_blank"><img src="/content/media/partner_004.jpg" width="120" height="90" alt=""></a>
+</div>
+<div>
+<a href="#" target="_blank"><img src="/content/media/partner_005.jpg" width="120" height="90" alt=""></a>
+</div>
+<div>
+<a href="#" target="_blank"><img src="/content/media/partner_001.jpg" width="120" height="90" alt=""></a>
+</div>
+<div>
+<a href="#" target="_blank"><img src="/content/media/partner_002.jpg" width="120" height="90" alt=""></a>
+</div>
+</div>
+                </div>
+            </div>
+            <!--/ clients -->
+        </div>
+    </div>
+{% endblock page_section_5 %}
+
+{% block page_section_6 %}
+    <div class="page-content-section-alt">
+        <div class="grid-row">
+            <!-- mobile ready -->
+            <div class="block block-mobile-ready">
+                <div class="block-head block-head-2">Двуколоночный блок<i></i></div>
+                <div class="block-cont">
+                    <p>Эта часть подходит для конечного краткого информационного контекста (О нас, например).</p>
+                    <div class="clearfix">
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340.jpg" width="570" height="340" alt="">
+                        </div>
+                        <div class="grid-col grid-col-6">
+                            <h2>Наши плюсы</h2>
+                            <ul>
+                                <li><i class="fa fa-check-square-o"></i>Мы стабильно производим большие объемы продукции</li>
+                                <li><i class="fa fa-check-square-o"></i>Наше производтство соответствует требованиям FSC.</li>
+                                <li><i class="fa fa-check-square-o"></i>На наших линиях - самое современное деревообрабатывающее оборудование.</li>
+                                <li><i class="fa fa-check-square-o"></i>Склад сырья на тесятки тысяч кубических метров гарантирует нам бесперебойную работу.</li>
+                                <li><i class="fa fa-check-square-o"></i>В компании работает только высококвалифицированные сотрудники.</li>
+                                <li><i class="fa fa-check-square-o"></i>Мы четко следуем спецификации заказчика на выпускаемую продукцию.</li>
+                                
+                            </ul>
+                            {#}
+                            <a href="#" class="button">Далее</a>
+                            #}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ mobile ready -->
+        </div>
+    </div>
+{% endblock page_section_6 %}
+
+{% block page_section_7 %}
+{% endblock page_section_7 %}
+
+{% block page_section_8 %}
+{% endblock page_section_8 %}
+
+{% block page_section_9 %}
+{% endblock page_section_9 %}
+
+{% block page_section_10 %}
+{% endblock page_section_10 %}
+
+{% block page_section_11 %}
+{% endblock page_section_11 %}
+
+{% block page_section_12 %}
+{% endblock page_section_12 %}
+
+
+
+
+
+
+
+
+
+

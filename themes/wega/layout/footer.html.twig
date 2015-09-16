@@ -1,0 +1,97 @@
+{# layout/footer.html.twig #}
+<div class="page-footer-pic" style="background-image: url(/content/media/2000x845.jpg)">                   
+</div>
+
+{#}
+<div class="page-footer-section">
+    <div class="grid-row">
+        <!-- subscription -->
+        <div class="widget-subscription clearfix">
+            <div class="head"><i class="fa fa-edit"></i>Подписка на новости</div>
+            <form action="#">
+                <input type="text" placeholder="Укажите Ваш e-mail">
+                <button type="submit" class="button">Отправить</button>
+            </form>
+        </div>  
+        <!--/ subscription -->  
+    </div>
+</div>
+#}
+
+{#}
+<div class="page-footer-section">
+    <div class="grid-row">
+        <div class="grid-col grid-col-3">
+            <!-- about -->
+            <div class="widget-about">
+                <img src="/content/media/logo_alt.png" width="90" height="90" alt="">
+                <p>
+Мы публикуем новости на нашем сайте. Новости нашей компании Вы также можете получать, подписавшись на нашу страницу в Фейсбук, на наш Twitter, или непосредственно на Ваш email. 
+                </p>
+            </div>
+            <!--/ about -->
+        </div>
+        
+        <div class="grid-col grid-col-3">
+            <!-- recent posts -->
+            <div class="widget-recent-posts">
+                <div class="widget-head">Материалы сайта</div>
+                <ul>
+                    <li>
+                        <a href="#" class="pic"><img src="/content/media/56x44.jpg" width="56" height="44" alt=""></a>
+                        <p><a href="#">Мероприятия "FSC пятница 2014"</a><span>Сентябрь 26, 2014</span></p>
+                    </li>
+                    <li>
+                        <a href="#" class="pic"><img src="/content/media/56x44.jpg" width="56" height="44" alt=""></a>
+                        <p><a href="#">Мероприятия "FSC пятница 2013"</a><span>Сентябрь 26, 2013</span></p>
+                    </li>
+                    <li>
+                        <a href="#" class="pic"><img src="/content/media/56x44.jpg" width="56" height="44" alt=""></a>
+                        <p><a href="#">Мероприятия "FSC пятница 2012"</a><span>Сентябрь 26, 2012</span></p>
+                    </li>
+                </ul>
+                <div class="widget-foot"><a href="#">Другие материалы</a></div>
+            </div>
+            <!--/ recent posts -->
+        </div>
+        
+        <div class="grid-col grid-col-6">
+            <!-- feedback -->
+            <form action="#" class="widget-feedback">
+                <div class="widget-head">Контакт с нами<span>Отправьте нам сообщение прямо сейчас. Ответ мы отправим на Ваш email</span></div>
+                <div class="input"><input type="text" placeholder="Ваше имя"></div>
+                <div class="input"><input type="text" placeholder="Ваш Email"></div>
+                <textarea cols="30" rows="5" placeholder="Ваше сообщение"></textarea>
+                <button type="submit" class="button">Отправить</button>
+            </form>
+            <!--/ feedback -->
+        </div>
+    </div>
+    <div class="grid-row">
+        <!-- social nav -->
+        <div class="social-nav">                            
+            <a href="{{config.twitter}}"><i class="fa fa-twitter"></i></a><!--
+            --><a href="{{config.facebook}}"><i class="fa fa-facebook"></i></a>
+        </div>  
+        <!--/ social nav -->                        
+    </div>
+</div>
+#}
+<div class="page-footer-section">
+    <div class="grid-row">
+        <!-- copyrights -->
+        {#<div class="copyrights">@ Copyright JSC &laquo;PSB GEH HOLZ&raquo;</div>#}
+        <!--/ copyrights -->
+        
+        <!-- secondary nav -->
+        <div class="secondary-nav">
+            <a href="/{{lang}}/">Главная</a> &nbsp;|&nbsp;
+            <a href="/{{lang}}/about">О нас</a> &nbsp;|&nbsp;
+            <a href="/{{lang}}/product">Продукция</a> &nbsp;|&nbsp;
+            <a href="/{{lang}}/standard">Стандарты</a> &nbsp;|&nbsp;
+            <a href="/{{lang}}/links">Ссылки</a> &nbsp;|&nbsp;
+            <a href="/{{lang}}/contacts">Контакты</a>
+        </div>
+        <!--/ secondary nav -->
+    </div>
+</div>

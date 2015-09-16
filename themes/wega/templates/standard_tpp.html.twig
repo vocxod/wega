@@ -1,0 +1,87 @@
+{% extends "layout/layout.html.twig" %}
+	
+{% block title %}
+	{% if lang == 'en' %}
+		PSB GEM HOLZ:TPP
+	{% endif %}
+	{% if lang == 'ru' %}
+		PSB GEM HOLZ:PTT
+	{% endif %}
+{% endblock %}
+
+{% block pagestyle %}
+.grid-row {
+	color: #333;
+}
+{% endblock %}
+
+{% block page_intro %}
+	{% if lang=='ru' %}
+	<div class="page-intro">
+	    <div class="pic" style="background-image: url('/content/media/2000x316xmap_ru.jpg')"></div>
+	    
+	    <div class="grid-row clearfix">
+	        <div class="page-title">ЗАО "ПСБ-ГЭМ-ХОЛЬЦ"</div>
+	        <div class="page-subtitle">Политика закупок</div>
+	        {#<div class="bread-crumbs"><a href="/">Главная</a> - Политика закупок</div>#}
+	    </div>
+	</div>
+	{% endif %}
+	{% if lang=='en' %}
+	<div class="page-intro">
+	    <div class="pic" style="background-image: url('/content/media/2000x316xmap_ru.jpg')"></div>
+	    
+	    <div class="grid-row clearfix">
+	        <div class="page-title">JSC "PSB-GEM-HOLZ"</div>
+	        <div class="page-subtitle">Timber procurement policy</div>
+	        <div class="bread-crumbs"><a href="/">Home</a> - TPP</div>
+	    </div>
+	</div>
+	{% endif %}	
+{% endblock %}
+
+{% block page_section %}
+	{% if lang=='ru' %}
+
+	<div class="page-content-section">
+		<div class="grid-row">						
+			<div class="grid-col grid-col-right grid-col-9">
+				<!-- blog details -->
+				<div class="block block-blog-details">
+					{#<h2>Политика закупок</h2>#}
+					<p>
+					Руководство ЗАО «ПСБ-ГЭМ-ХОЛЬЦ» осуществляет  обязательства по запрету на размещение нелегально заготовленной древесины на рынке Евросоюза и обязательства по осуществлению надлежащей проверки Соответствие Регламенту (ЕС)  № 995/2010 – Европейскому Регламенту по древесине (EUTR)</p><p>
+					1.	Мы обязуемся ежегодно предварительно предоставлять информацию о географическом регионе происхождения (страна заготовки, регион и разрешение на заготовку древесины).</p><p>
+					2.	Мы обязуемся по требованию предоставлять компаниям-партнерам всю необходимую информацию для оценки рисков.</p><p>
+					3.	Мы согласны по требованию предоставить возможность для проведения проверки действий поставщиков или предыдущих поставщиков в цепи поставки со стороны вторых или третьих лиц.</p><p>
+					4.	 Мы обязуемся ежегодно предварительно предоставлять информацию о географическом регионе происхождения (страна заготовки, регион и разрешение на заготовку древесины).</p><p>
+					5.	Мы обязуемся по требованию предоставлять компаниям партнерам всю необходимую информацию для оценки рисков.</p>
+
+					<div class="about">
+					<i class="fa fa-user"></i>
+					<h3><a href="#">Быков	П. В. <span>Начальник лесного отдела</span></a></h3>
+					<p>Разработчик процедур правил заготовки, контроль исполнения правил FSC</p>
+					</div>
+					<div class="about">
+					<i class="fa fa-user"></i>
+					<h3><a href="#">Раков  С.  В. <span>Зам. 	Начальника лесного отдела</span></a></h3>
+					<p>Разработчик процедур правил заготовки, контроль исполнения правил FSC</p>
+					</div>
+
+				</div>
+				<!--/ blog details -->
+			</div>
+						
+			{% include 'layout/tpp_sidebar.html.twig' %}
+		
+		</div>
+
+	</div>
+
+	{% endif %}
+
+	{% if lang=='en' %}
+
+	{% endif %}
+{% endblock page_section %}
+

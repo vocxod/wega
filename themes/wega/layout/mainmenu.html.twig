@@ -1,0 +1,155 @@
+{# mainmenu.html.twig #}
+<header id="page-header-bottom" class="page-header-bottom">
+    <div class="grid-row">
+        
+        {#
+        <!-- main search -->
+        <div id="main-search" class="main-search">
+            <button type="button" class="fa fa-search"></button>
+            <form action="#">
+                <input type="text" placeholder="Type keywords and press Enter">
+                <button type="submit"></button>
+            </form>
+        </div>
+        <!--/ main search -->
+        #}
+
+        <!-- logo -->
+        <div class="logo">
+            <span><a href="/{{lang}}"><img src="/content/media/logo_big.png" width="90" height="90" alt=""></a></span>
+        </div>
+        <!--/ logo -->
+        
+        {% if lang == 'ru' %}
+        <!-- main nav -->
+        <nav id="main-nav" class="main-nav">
+            <a href="#" class="switcher">Меню<i class="fa fa-bars"></i></a>
+            <ul>
+                <li class="">
+                    <a href="/{{lang}}">Главная<i class="fa fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="/{{lang}}/about">О Компании</a></li>
+                        <li><a href="/{{lang}}/history">История</a></li>
+                        {#<li><a href="index2.html">Новости</a></li>#}
+                    </ul>
+                </li>
+                
+                {#
+                <li>
+                    <a href="/{{lang}}/about">О нас<i class="fa fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="/{{lang}}/about">О нас</a></li>
+                        <li><a href="/{{lang}}/sawmill">Производство</a></li>
+                        <li><a href="/{{lang}}/sawmill/mission">Наша миссия</a></li>
+                        <li><a href="/{{lang}}/sawmill/history">История компании</a></li>
+                        <li><a href="/{{lang}}/sawmill/registr">Реквизиты</a></li>
+                    </ul>
+                </li>
+                #}
+
+                <li>
+                    <a href="#">Продукция<i class="fa fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="/{{lang}}/production/timber">Доска для производства поддонов</a></li>
+                        <li><a href="/{{lang}}/production/square">Брус для производства поддонов</a></li>
+                        <li><a href="/{{lang}}/production/woodchips">Щепа для целлюлозо-бумажной промышленности</a></li>
+                        
+                        {#<li><a href="/{{lang}}/production/sawdust">Опилки</a></li>#}
+                        {#<li><a href="/{{lang}}/production/bark">Кора</a></li>#}
+                    </ul>
+                </li>
+
+                <li>
+<a href="#">Стандарты лесообеспечения<i class="fa fa-angle-down"></i></a>
+<ul  style="width:244px;">
+<li style="width:244px;"><a href="/{{lang}}/standard/fsc">Сертификаты FSC</a></li>
+<li style="width:244px;"><a href="/{{lang}}/standard/tpp">Политика закупок</a></li>
+<li style="width:244px;"><a href="/{{lang}}/requirements">Технические требования на закупаемое сырье</a></li>
+</ul>
+                </li>
+                
+                <li>
+                    <a href="/{{lang}}/contacts">Контакты<i class="fa fa-angle-down"></i></a>
+                    
+                    <ul>
+                        <li><a href="/{{lang}}/contact/ofice">Офис</a></li>
+                        <li><a href="/{{lang}}/contact/sales">Бухгалтерия</a></li>
+                        <li><a href="/{{lang}}/contact/sell">Продажа</a></li>
+                        <li><a href="/{{lang}}/contact/buy">Закупка</a></li>
+                    </ul>
+                    
+                </li>
+
+            </ul>
+        </nav>
+        <!--/ main nav -->
+        {% endif %}
+
+
+        {% if lang == 'en' %}
+        <!-- main nav -->
+        <nav id="main-nav" class="main-nav">
+            <a href="#" class="switcher">Menu<i class="fa fa-bars"></i></a>
+            <ul>
+                <li class="">
+                    <a href="/{{lang}}">Home<i class="fa fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="/{{lang}}/about">About</a></li>
+                        <li><a href="/{{lang}}/history">History</a></li>
+                    </ul>
+                </li>
+                
+                {#
+                <li>
+                    <a href="/{{lang}}/about">О нас<i class="fa fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="/{{lang}}/about">О нас</a></li>
+                        <li><a href="/{{lang}}/sawmill">Производство</a></li>
+                        <li><a href="/{{lang}}/sawmill/mission">Наша миссия</a></li>
+                        <li><a href="/{{lang}}/sawmill/history">История компании</a></li>
+                        <li><a href="/{{lang}}/sawmill/registr">Реквизиты</a></li>
+                    </ul>
+                </li>
+                #}
+
+                <li>
+                    <a href="/{{lang}}">Product<i class="fa fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="/{{lang}}/production/timber">Timber</a></li>
+                        <li><a href="/{{lang}}/production/square">Square</a></li>
+                        <li><a href="/{{lang}}/production/woodchips">Woodchips</a></li>
+                        
+                        {#<li><a href="/{{lang}}/production/sawdust">Опилки</a></li>#}
+                        {#<li><a href="/{{lang}}/production/bark">Кора</a></li>#}
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="/{{lang}}">Sertification<i class="fa fa-angle-down"></i></a>
+                    <ul>
+                        {#<li><a href="/{{lang}}/standard">Стандарты</a></li>#}
+                        <li><a href="/{{lang}}/standard/fsc">FSC cert</a></li>
+                        <li><a href="/{{lang}}/standard/tpp">Timber procurement policy</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="/{{lang}}/contacts">Contacts<i class="fa fa-angle-down"></i></a>
+                    {#}
+                    <ul>
+                        <li><a href="/{{lang}}/contacts">Общие</a></li>
+                        <li><a href="/{{lang}}/sales">Продажи</a></li>
+                        <li><a href="/{{lang}}/quality">Качество</a></li>
+                    </ul>
+                    #}
+                </li>
+
+            </ul>
+        </nav>
+        <!--/ main nav -->
+        {% endif %}
+
+    </div>
+</header>
+
+

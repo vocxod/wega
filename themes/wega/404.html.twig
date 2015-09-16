@@ -1,0 +1,27 @@
+{% extends "layout/layout.html.twig" %}
+
+{% block content %}
+{% endblock %}
+
+{% block pageslider %}
+    {#% include "layout/slider.html.twig" %#}
+{% endblock %}
+
+{% block page_section %}
+<div class="page-content-section page-content-section-border">
+	<div class="grid-row">
+		<!-- not found -->
+		<div class="block block-not-found">
+			<div class="block-cont">
+				<div class="pic" style="background-image: url('/content/media/404.jpg')">
+					<div><span><em>404</em>Страница не найдена</span></div>
+				</div>
+				<h3>Запрошенной страницы нет</h3>
+				<p>Проверьте правильность строки URL в Вашем браузере.</p>
+				<a href="/{{lang}}" class="button">На главную</a>
+			</div>
+		</div>
+		<!--/ not found -->
+	</div>
+</div>
+{% endblock %}

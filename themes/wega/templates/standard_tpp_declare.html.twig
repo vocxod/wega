@@ -1,0 +1,248 @@
+{% extends "layout/layout.html.twig" %}
+	
+{% block title %}
+	{% if lang == 'en' %}
+		PSB GEM HOLZ:TPP
+	{% endif %}
+	{% if lang == 'ru' %}
+		PSB GEM HOLZ:PTT
+	{% endif %}
+{% endblock %}
+
+{% block pagestyle %}
+	<style type="text/css">
+
+		table {
+			color: #444;	
+			line-height: 1.6;		
+		}
+
+		table th {
+			/* background: #384452; */
+			color: #333;
+			font-size: 1.3em;
+			font-weight: bold;
+			line-height: 1.5;
+		}
+	</style>
+{% endblock %}
+
+{% block page_intro %}
+	{% if lang=='ru' %}
+	<div class="page-intro">
+	    <div class="pic" style="background-image: url('/content/media/2000x316xmap_ru.jpg')"></div>	    
+	    <div class="grid-row clearfix">
+	        <div class="page-title">ЗАО "ПСБ-ГЭМ-ХОЛЬЦ"</div>
+	        <div class="page-subtitle">Политика закупок:Декларация</div>
+	    </div>
+	</div>
+	{% endif %}
+	{% if lang=='en' %}
+	<div class="page-intro">
+	    <div class="pic" style="background-image: url('/content/media/2000x316xmap_ru.jpg')"></div>
+	    
+	    <div class="grid-row clearfix">
+	        <div class="page-title">JSC "PSB-GEM-HOLZ"</div>
+	        <div class="page-subtitle">Timber procurement policy:Declaration</div>
+	    </div>
+	</div>
+	{% endif %}	
+{% endblock %}
+
+{% block page_section %}
+{% if lang == 'ru' %}
+	<div class="page-content-section">
+		<div class="grid-row">						
+			<div class="grid-col grid-col-right grid-col-9">
+				<!-- blog details -->
+				<div class="block block-blog-details">
+					{#<h2>Декларация компании</h2>#}
+					
+					<table class="table">
+						<tr>
+							<th>Декларация
+					согласно FSC-POL-01-004
+					(Политика в отношении ассоциирования 
+					организаций с FSC™)</th>
+							<th>Self-Declaration 
+					regarding FSC-POL-01-004 
+					(Policy for the Association of Organizations 
+					with FSC™)</th>
+						</tr>
+						<tr>
+							<td>Подписавшаяся Организация ассоциируется с Forest Stewardship Council® A.C., Оахака, Мексика, или одной из его дочерних или аффилированных компаний (далее FSC) ввиду её членства или в силу договорных отношений с FSC. Подписывая следующее, Организация открыто заявляет, что ознакомлена и понимает «Политику в отношении ассоциирования организаций с FSC», опубликованную на www.fsc.org. </td>
+							<td>The signing Organization is associated with the Forest Stewardship Council A.C., Oaxaca, Mexico, or one of its subsidiaries or affiliates (hereinafter: FSC) by being either a member of or having a contractual relationship with FSC. Hereby the signing Organization explicitly states that it has read and understood the «Policy for the Association of Organizations with FSC» as published under www.fsc.org.</td>
+						</tr>
+						<tr>
+							<td>Настоящая политика устанавливает позицию FSC в отношении неприемлемой деятельности организаций и физических лиц, которые ассоциируются или желают быть ассоциированы с FSC, а также механизм диссоциации.</td>
+							<td>This policy stipulates FSC’s position with regards to unacceptable activities by organizations and individuals which already are or would like to be associated with FSC as well as the mechanism for disassociation.</td>
+						</tr>
+						<tr>
+							<td>Учитывая  вышеизложенного Организация открыто обязуется в настоящее время и в будущем, в течение всего срока действия отношений с FSC, не быть прямо или косвенно вовлечённой в следующие неприемлемые  виды деятельности:</td>
+							<td>In light of the above, the Organization explicitly agrees currently and in the future, as long as the relationship with FSC exists, not to be directly or indirectly involved in the following unacceptable activities:</td>
+						</tr>
+						<tr>
+							<td>1) Незаконная лесозаготовка или торговля незаконной древесиной или лесной продукцией;</td>
+							<td>1) Illegal logging or the trade in illegal wood or forest products;</td>
+						</tr>
+						<tr>
+							<td>2) Нарушение традиционных прав или прав человека при ведении лесного хозяйства;</td>
+							<td>2) Violation of traditional and human rights in forestry operations;</td>
+						</tr>
+						<tr>
+							<td>3) Разрушение высоких природоохранных ценностей при ведении лесного хозяйства;</td>
+							<td>3) Destruction of high conservation values in forestry operations;</td>
+						</tr>
+						<tr>
+							<td>4) Значительное преобразование лесов в плантации или нелесных земель;</td>
+							<td>4) Significant conversion of forests to plantations or non-forest use;</td>
+						</tr>
+						<tr>
+							<td>5) Применение генетически модифицированных организмов при ведении лесного хозяйства;</td>
+							<td>5) Introduction of genetically modified organisms in forestry operations;</td>
+						</tr>
+						<tr>
+							<td>6) Нарушение любой из основных конвенций МОТ, определённых в Декларации МОТ об основополагающих принципах и правах в сфере труда.</td>
+							<td>6) Violation of any of the ILO Core Conventions as defined in the ILO Declaration on Fundamental Principles and Rights at Work.</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2" align="center" style="background:url('/content/media/shtamp.jpg') no-repeat; background-position:center;">
+							<br/>
+							<br/>
+							От имени Организации<br/>
+							__ЗАО «__ПСБ-ГЭМ-ХОЛЬЦ__» <br/>
+							<br/>
+							Генеральный директор _________________<br/>
+							<br/>
+							_____ Строгий Н. Б. <br/>
+							М.П.
+							<br/>
+							7 декабря_ 2011 год, Россия<br/>
+							</td>
+						</tr>
+					</table>
+			
+					<div class="about">
+						<i class="fa fa-user"></i>
+						<h3><a href="#">Быков	П. В. <span>Начальник лесного отдела</span></a></h3>
+						<p>Разработчик процедур правил заготовки, контроль исполнения правил FSC</p>
+					</div>
+
+					<div class="about">
+						<i class="fa fa-user"></i>
+						<h3><a href="#">Раков  С.  В. <span>Зам. 	Начальника лесного отдела</span></a></h3>
+						<p>Разработчик процедур правил заготовки, контроль исполнения правил FSC</p>
+					</div>
+
+				</div>
+				<!--/ blog details -->
+			</div>
+						
+		{% include 'layout/tpp_sidebar.html.twig' %}
+		
+		</div>
+	</div>
+{% endif %}
+
+{% if lang == 'en' %}
+	<div class="page-content-section">
+		<div class="grid-row">						
+			<div class="grid-col grid-col-right grid-col-9">
+				<!-- blog details -->
+				<div class="block block-blog-details">
+					{#<h2>Декларация компании</h2>#}
+					
+					<table class="table">
+						<tr>
+							<th>Декларация
+					согласно FSC-POL-01-004
+					(Политика в отношении ассоциирования 
+					организаций с FSC™)</th>
+							<th>Self-Declaration 
+					regarding FSC-POL-01-004 
+					(Policy for the Association of Organizations 
+					with FSC™)</th>
+						</tr>
+						<tr>
+							<td>Подписавшаяся Организация ассоциируется с Forest Stewardship Council® A.C., Оахака, Мексика, или одной из его дочерних или аффилированных компаний (далее FSC) ввиду её членства или в силу договорных отношений с FSC. Подписывая следующее, Организация открыто заявляет, что ознакомлена и понимает «Политику в отношении ассоциирования организаций с FSC», опубликованную на www.fsc.org. </td>
+							<td>The signing Organization is associated with the Forest Stewardship Council A.C., Oaxaca, Mexico, or one of its subsidiaries or affiliates (hereinafter: FSC) by being either a member of or having a contractual relationship with FSC. Hereby the signing Organization explicitly states that it has read and understood the «Policy for the Association of Organizations with FSC» as published under www.fsc.org.</td>
+						</tr>
+						<tr>
+							<td>Настоящая политика устанавливает позицию FSC в отношении неприемлемой деятельности организаций и физических лиц, которые ассоциируются или желают быть ассоциированы с FSC, а также механизм диссоциации.</td>
+							<td>This policy stipulates FSC’s position with regards to unacceptable activities by organizations and individuals which already are or would like to be associated with FSC as well as the mechanism for disassociation.</td>
+						</tr>
+						<tr>
+							<td>Учитывая  вышеизложенного Организация открыто обязуется в настоящее время и в будущем, в течение всего срока действия отношений с FSC, не быть прямо или косвенно вовлечённой в следующие неприемлемые  виды деятельности:</td>
+							<td>In light of the above, the Organization explicitly agrees currently and in the future, as long as the relationship with FSC exists, not to be directly or indirectly involved in the following unacceptable activities:</td>
+						</tr>
+						<tr>
+							<td>1) Незаконная лесозаготовка или торговля незаконной древесиной или лесной продукцией;</td>
+							<td>1) Illegal logging or the trade in illegal wood or forest products;</td>
+						</tr>
+						<tr>
+							<td>2) Нарушение традиционных прав или прав человека при ведении лесного хозяйства;</td>
+							<td>2) Violation of traditional and human rights in forestry operations;</td>
+						</tr>
+						<tr>
+							<td>3) Разрушение высоких природоохранных ценностей при ведении лесного хозяйства;</td>
+							<td>3) Destruction of high conservation values in forestry operations;</td>
+						</tr>
+						<tr>
+							<td>4) Значительное преобразование лесов в плантации или нелесных земель;</td>
+							<td>4) Significant conversion of forests to plantations or non-forest use;</td>
+						</tr>
+						<tr>
+							<td>5) Применение генетически модифицированных организмов при ведении лесного хозяйства;</td>
+							<td>5) Introduction of genetically modified organisms in forestry operations;</td>
+						</tr>
+						<tr>
+							<td>6) Нарушение любой из основных конвенций МОТ, определённых в Декларации МОТ об основополагающих принципах и правах в сфере труда.</td>
+							<td>6) Violation of any of the ILO Core Conventions as defined in the ILO Declaration on Fundamental Principles and Rights at Work.</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2" align="center" style="background:url('/content/media/shtamp.jpg') no-repeat; background-position:center;">
+							<br/>
+							<br/>
+							От имени Организации<br/>
+							__ЗАО «__ПСБ-ГЭМ-ХОЛЬЦ__» <br/>
+							<br/>
+							Генеральный директор _________________<br/>
+							<br/>
+							_____ Строгий Н. Б. <br/>
+							М.П.
+							<br/>
+							7 декабря_ 2011 год, Россия<br/>
+							</td>
+						</tr>
+					</table>
+			
+					<div class="about">
+						<i class="fa fa-user"></i>
+						<h3><a href="#">Bykov P. V. <span>Chief forest department</span></a></h3>
+						<p>Разработчик процедур правил заготовки, контроль исполнения правил FSC</p>
+					</div>
+
+					<div class="about">
+						<i class="fa fa-user"></i>
+						<h3><a href="#">Rakov S. V.<span>Chief forest department</span></a></h3>
+						<p>Разработчик процедур правил заготовки, контроль исполнения правил FSC</p>
+					</div>
+
+				</div>
+				<!--/ blog details -->
+			</div>
+						
+		{% include 'layout/tpp_sidebar.html.twig' %}
+		
+		</div>
+	</div>
+{% endif %}
+
+{% endblock page_section %}
+
+
+ 
+ 
+ 

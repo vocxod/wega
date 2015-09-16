@@ -1,0 +1,147 @@
+{% extends "layout/layout.html.twig" %}
+	
+{% block title %}
+	{% if lang == 'en' %}
+		PSB GEM HOLZ:Product:Woodchips
+	{% endif %}
+	{% if lang == 'ru' %}
+		PSB GEM HOLZ:Продукция:Щепа древесная
+	{% endif %}
+{% endblock %}
+
+{% block page_intro %}
+	{% if lang=='ru' %}
+	<div class="page-intro">
+	    {#<div class="pic" style="background-image: url('/content/media/2000x316xproduction.jpg')"></div>#}
+        <div class="pic" style="background-image: url('/content/media/2000x316xmap_en.jpg')"></div>
+	    
+	    <div class="grid-row clearfix">
+	        <div class="page-title">ЗАО "ПСБ-ГЭМ-ХОЛЬЦ"</div>
+	        <div class="page-subtitle">Продукция:Щепа древесная</div>
+	        {#<div class="bread-crumbs"><a href="/">Главная</a> Продукция - Щепа древесная</div>#}
+	    </div>
+	</div>
+	{% endif %}
+	{% if lang=='en' %}
+	<div class="page-intro">
+	    {#<div class="pic" style="background-image: url('/content/media/2000x316xproduction.jpg')"></div>#}
+	    <div class="pic" style="background-image: url('/content/media/2000x316xmap_en.jpg')"></div>
+	    <div class="grid-row clearfix">
+	        <div class="page-title">JSC "PSB-GEM-HOLZ"</div>
+	        <div class="page-subtitle">Product:Woodchips</div>
+	        {#<div class="bread-crumbs"><a href="/">Home</a> - Product - Woodchips</div>#}
+	    </div>
+	</div>
+	{% endif %}	
+{% endblock %}
+
+{% block page_section %}
+	{% if lang == 'en' %}
+    <div class="page-content-section-alt">
+        <div class="grid-row">
+            <!-- mobile ready -->
+            <div class="block block-mobile-ready">
+                <div class="block-head block-head-2">Woodchips<i></i></div>
+                <div class="block-cont">
+                    <p>Woodchips is additional product our company.</p>
+                    <div class="clearfix">
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340xwoodchips_ru.jpg" width="570" height="340" alt="">
+                        </div>
+                        <div class="grid-col grid-col-6">
+                            <h2>Based properties</h2>
+                            <ul>
+                                <li><i class="fa fa-check-square-o"></i>Основные породы: сосна, есль</li>
+                                <li><i class="fa fa-check-square-o"></i>Fraction size by customer requirements</li>
+                                <li><i class="fa fa-check-square-o"></i></li>
+                                <li><i class="fa fa-check-square-o"></i>Standerd: SCAN, GOST TU 15815-83</li>
+                                <li><i class="fa fa-check-square-o"></i></li>
+                                <li><i class="fa fa-check-square-o"></i>Trucking</li>
+                                <li><i class="fa fa-gear"></i>We answered on any You question.</li>
+                            </ul>
+                            {#}
+                            <a href="#" class="button">Далее</a>
+                            #}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ mobile ready -->
+        </div>
+    </div>
+	
+    <div class="page-content-section-alt">
+        <div class="grid-row">
+            <!-- mobile ready -->
+            <div class="block block-mobile-ready">
+                <div class="block-cont">
+                    <div class="clearfix">
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340_wc_2.jpg" width="570" height="340" alt="">
+                        </div>
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340xwc_ru.jpg" width="570" height="340" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ mobile ready -->
+        </div>
+    </div>
+    {% endif %}
+
+
+
+
+	{% if lang == 'ru' %}
+    <div class="page-content-section-alt">
+        <div class="grid-row">
+            <!-- mobile ready -->
+            <div class="block block-mobile-ready">
+                <div class="block-head block-head-2">Щепа древесная для целлюлозо-бумажной промышленности<i></i></div>
+                <div class="block-cont">
+                    <div class="clearfix">
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340xwoodchips_en.jpg" width="570" height="340" alt="">
+                        </div>
+                        <div class="grid-col grid-col-6">
+                            <h2>Параметры</h2>
+<ul>
+<li><i class="fa fa-check-square-o"></i>Породы: сосна, ель</li>
+<li><i class="fa fa-check-square-o"></i>Фракция</li>
+<li><i class="fa fa-check-square-o"></i>Стандарты: SCAN, ГОСТ Технические условия 15815-83</li>
+<li><i class="fa fa-check-square-o"></i></li>
+<li><i class="fa fa-check-square-o"></i>Транспортировка</li>
+</ul>
+                            {#}
+                            <a href="#" class="button">Далее</a>
+                            #}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ mobile ready -->
+        </div>
+    </div>
+
+    <div class="page-content-section-alt">
+        <div class="grid-row">
+            <!-- mobile ready -->
+            <div class="block block-mobile-ready">
+                <div class="block-cont">
+                    <div class="clearfix">
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340_wc_2.jpg" width="570" height="340" alt="">
+                        </div>
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340xwc_ru.jpg" width="570" height="340" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ mobile ready -->
+        </div>
+    </div>
+
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,144 @@
+{% extends "layout/layout.html.twig" %}
+	
+{% block title %}
+	{% if lang == 'en' %}
+		PSB GEM HOLZ:Product:Square
+	{% endif %}
+	{% if lang == 'ru' %}
+		PSB GEM HOLZ:Продукция:Брус
+	{% endif %}
+{% endblock %}
+
+{% block page_intro %}
+	{% if lang=='ru' %}
+	<div class="page-intro">
+        <div class="pic" style="background-image: url('/content/media/2000x316xmap_en.jpg')"></div>
+{#}	    <div class="pic" style="background-image: url('/content/media/2000x316xproduction.jpg')"></div>#}
+	    
+	    <div class="grid-row clearfix">
+	        <div class="page-title">ЗАО "ПСБ-ГЭМ-ХОЛЬЦ"</div>
+	        <div class="page-subtitle">Продукция:Брус для производства поддонов</div>
+	        {#<div class="bread-crumbs"><a href="/">Главная</a> Продукция - Брус</div>#}
+	    </div>
+	</div>
+	{% endif %}
+	{% if lang=='en' %}
+	<div class="page-intro">
+        <div class="pic" style="background-image: url('/content/media/2000x316xmap_en.jpg')"></div>
+	    {#<div class="pic" style="background-image: url('/content/media/2000x316xproduction.jpg')"></div>#}
+	    
+	    <div class="grid-row clearfix">
+	        <div class="page-title">JSC "PSB-GEM-HOLZ"</div>
+	        <div class="page-subtitle">Product:Square for pallet manufacture</div>
+	        {#<div class="bread-crumbs"><a href="/">Home</a> - Product - Square</div>#}
+	    </div>
+	</div>
+	{% endif %}	
+{% endblock %}
+
+{% block page_section %}
+	{% if lang == 'en' %}
+    <div class="page-content-section-alt">
+        <div class="grid-row">
+            <!-- mobile ready -->
+            <div class="block block-mobile-ready">
+                <div class="block-head block-head-2">Square<i></i></div>
+                <div class="block-cont">
+                    <p>Square is additional product our company.</p>
+                    <div class="clearfix">
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340xsquare_ru.jpg" width="570" height="340" alt="">
+                        </div>
+                        <div class="grid-col grid-col-6">
+                            <h2>Based properties</h2>
+                            <ul>
+                                <li><i class="fa fa-check-square-o"></i>Основные породы: сосна, есль</li>
+                                <li><i class="fa fa-check-square-o"></i>Size by customer requirements</li>
+                                <li><i class="fa fa-check-square-o"></i>Packing</li>
+                                <li><i class="fa fa-check-square-o"></i>Пропитка антисептиком</li>
+                                <li><i class="fa fa-check-square-o"></i>Сушка (отдельная услуга)</li>
+                                <li><i class="fa fa-check-square-o"></i>Trucking</li>
+                                <li><i class="fa fa-gear"></i>We answered on any You question.</li>
+                            </ul>
+                            {#}
+                            <a href="#" class="button">Далее</a>
+                            #}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ mobile ready -->
+        </div>
+    </div>
+
+    <div class="page-content-section-alt">
+        <div class="grid-row">
+            <!-- mobile ready -->
+            <div class="block block-mobile-ready">
+                <div class="block-cont">
+                    <div class="clearfix">
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340xtimber2_en.jpg" width="570" height="340" alt="">
+                        </div>
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340xtimber2_en.jpg" width="570" height="340" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ mobile ready -->
+        </div>
+    </div>
+
+	{% endif %}
+	{% if lang == 'ru' %}
+    <div class="page-content-section-alt">
+        <div class="grid-row">
+            <!-- mobile ready -->
+            <div class="block block-mobile-ready">
+                <div class="block-head block-head-2">Брус для произвоства поддонов<i></i></div>
+                <div class="block-cont">
+                    <div class="clearfix">
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340_square_4.jpg" width="570" height="340" alt="">
+                        </div>
+                        <div class="grid-col grid-col-6">
+                            <h2>Параметры</h2>
+                            <ul>
+                                <li><i class="fa fa-check-square-o"></i>Породы: сосна, есль</li>
+                                <li><i class="fa fa-check-square-o"></i>Размеры по спецификации заказчика</li>
+                                <li><i class="fa fa-check-square-o"></i>Пакетирование</li>
+                                <li><i class="fa fa-check-square-o"></i>Антисептирование (SINESTO B)</li>
+                                <li><i class="fa fa-check-square-o"></i>Термообработка (HD)</li>
+                                <li><i class="fa fa-check-square-o"></i>Сушка (KD)</li>
+                                <li><i class="fa fa-check-square-o"></i>Транспортировка (контейнер, автотранспорт)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ mobile ready -->
+        </div>
+    </div>
+
+    <div class="page-content-section-alt">
+        <div class="grid-row">
+            <!-- mobile ready -->
+            <div class="block block-mobile-ready">
+                <div class="block-cont">
+                    <div class="clearfix">
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340_square_5.jpg" width="570" height="340" alt="">
+                        </div>
+                        <div class="grid-col grid-col-6">                                       
+                            <img src="/content/media/570x340_square_6.jpg" width="570" height="340" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ mobile ready -->
+        </div>
+    </div>
+
+    {% endif %}
+{% endblock %}

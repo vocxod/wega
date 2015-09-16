@@ -1,0 +1,115 @@
+{% extends "layout/layout.html.twig" %}
+	
+{% block title %}
+	{% if lang == 'en' %}
+		PSB GEM HOLZ:FSC
+	{% endif %}
+	{% if lang == 'ru' %}
+		PSB GEM HOLZ:FSC
+	{% endif %}
+{% endblock %}
+
+{% block fancy_start %}
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+	</script>
+{% endblock %}
+
+{% block page_intro %}
+	{% if lang=='ru' %}
+	<div class="page-intro">
+	    <div class="pic" style="background-image: url('/content/media/2000x316xmap_ru.jpg')"></div>
+	    
+	    <div class="grid-row clearfix">
+	        <div class="page-title">ЗАО "ПСБ-ГЭМ-ХОЛЬЦ"</div>
+	        <div class="page-subtitle">FSC</div>
+	        <div class="bread-crumbs"><a href="/">Главная</a> - сертификатификация FSC</div>
+	    </div>
+	</div>
+	{% endif %}
+	{% if lang=='en' %}
+	<div class="page-intro">
+	    <div class="pic" style="background-image: url('/content/media/2000x316xmap_ru.jpg')"></div>
+	    
+	    <div class="grid-row clearfix">
+	        <div class="page-title">JSC "PSB-GEM-HOLZ"</div>
+	        <div class="page-subtitle">FSC</div>
+	        <div class="bread-crumbs"><a href="/">Home</a> - FSC certification</div>
+	    </div>
+	</div>
+	{% endif %}	
+{% endblock %}
+
+{% block page_section %}
+	{% if lang=='ru' %}
+	<div class="page-content-section">
+			<div class="grid-row">						
+				<!-- about -->
+				<div class="block block-about-4">
+					<div class="block-head block-head-2">Сертификация FSC<i></i></div>
+					<div class="block-cont clearfix">
+						<div class="grid-col grid-col-6">
+							<div class="owl-slideshow-2">
+						  		<div>
+									<a class="fancybox" rel="group" href="/content/media/fsc_cert_1_big.jpg">
+									<img src="/content/media/fsc_cert_1.jpg" alt="" />
+									</a>
+								</div>
+								<div>
+									<a class="fancybox" rel="group" href="/content/media/fsc_cert_2_big.jpg">
+									<img src="/content/media/fsc_cert_2.jpg" alt="" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="grid-col grid-col-6">
+							<h3>FSC </h3>
+							<h4>Сертификат лесного попечительского совета</h4>
+							<p>ЗАО «ПСБ-ГЭМ-ХОЛЬЦ» является держателем сертификата FC-COC/CW -643021</p>
+							<p>Лесной попечительский совет (Forest Stewardship council, FSC) — международная некоммерческая организация в форме ассоциации, которая состоит из представителей экологических и социальных организаций, продавцов лесоматериалов, лесничих, коренных малочисленных народов, лесных корпораций, сертификационных организаций из многих стран мира, в том числе и из России. Члены ЛПС могут состоять в экологической, экономической и социальной палатах. Для системы управления ЛПС характерны равный вес в принятии решений каждой из указанных палат, демократичность и равенство.</p>
+						</div>
+					</div>
+				</div>
+				<!--/ about -->
+			</div>
+		</div>
+	{% endif %}	
+
+	{% if lang=='en' %}		
+		<div class="page-content-section">
+			<div class="grid-row">						
+				<!-- about -->
+				<div class="block block-about-4">
+					<div class="block-head block-head-2">Сертификация FSC<i></i></div>
+					<div class="block-cont clearfix">
+						<div class="grid-col grid-col-6">
+							<div class="owl-slideshow-2">
+						  		<div>
+									<a class="fancybox" rel="group" href="/content/media/fsc_cert_1_big.jpg">
+									<img src="/content/media/fsc_cert_1.jpg" alt="" />
+									</a>
+								</div>
+								<div>
+									<a class="fancybox" rel="group" href="/content/media/fsc_cert_2_big.jpg">
+									<img src="/content/media/fsc_cert_2.jpg" alt="" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="grid-col grid-col-6">
+							<h3>FSC </h3>
+							<h4>Сертификат лесного попечительского совета (en)</h4>
+							<p>ЗАО «ПСБ-ГЭМ-ХОЛЬЦ» является держателем сертификата FC-COC/CW -643021</p>
+							<p>Лесной попечительский совет (Forest Stewardship council, FSC) — международная некоммерческая организация в форме ассоциации, которая состоит из представителей экологических и социальных организаций, продавцов лесоматериалов, лесничих, коренных малочисленных народов, лесных корпораций, сертификационных организаций из многих стран мира, в том числе и из России. Члены ЛПС могут состоять в экологической, экономической и социальной палатах. Для системы управления ЛПС характерны равный вес в принятии решений каждой из указанных палат, демократичность и равенство.</p>
+						</div>
+					</div>
+				</div>
+				<!--/ about -->
+			</div>
+		</div>
+	{% endif %}	
+
+{% endblock %}
+

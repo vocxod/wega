@@ -1,0 +1,189 @@
+{% extends "layout/layout.html.twig" %}
+	
+{% block title %}
+	{% if lang == 'en' %}
+		PSB GEM HOLZ:Prices
+	{% endif %}
+	{% if lang == 'ru' %}
+		PSB GEM HOLZ:Прайс
+	{% endif %}
+{% endblock %}
+
+{% block page_intro %}
+	{% if lang=='ru' %}
+			<div class="page-intro">
+				<div class="pic" style="background-image: url('/content/media/2000x316xlinks_ru.jpg')"></div>
+				
+				<div class="grid-row clearfix">
+					<div class="page-title">ЗАО ПСБ-ГЭМ-ХОЛЬЦ</div>
+					<div class="page-subtitle">Прайс</div>
+					<div class="bread-crumbs"><a href="/">Главная</a> - Прайс</div>
+				</div>
+			</div>
+	{% endif %}
+	{% if lang=='en' %}
+			<div class="page-intro">
+				<div class="pic" style="background-image: url('/content/media/2000x316xlinks_en.jpg')"></div>
+				
+				<div class="grid-row clearfix">
+					<div class="page-title">JSC PSB-GEM-HOLZ</div>
+					<div class="page-subtitle">Prices</div>
+					<div class="bread-crumbs"><a href="/">Home</a> - Prices</div>
+				</div>
+			</div>
+	{% endif %}	
+{% endblock %}
+
+{% block page_section %}
+	{% if lang == 'en' %}
+				<div class="page-content-section-alt">
+					<div class="grid-row">
+						<!-- pricing -->
+						<div class="block block-pricing">
+							<div class="block-cont">
+								<div class="block-head block-head-1">Pricing Table<i class="fa fa-tags"></i></div>
+								<ul>
+									<li>
+										<div class="inner">
+											<div class="price"><div>$100<span>/ month</span></div></div>
+											<dl>
+												<dt>Basic</dt>
+												<dd>Web Design</dd>
+												<dd>Web Development</dd>
+												<dd>Photography</dd>
+												<dd>E-mail Marketing</dd>
+												<dd>Javascript</dd>
+												<dd>PSD to HTML/CSS</dd>
+											</dl>
+											<a href="#" class="button">PURCHASE NOW</a>
+										</div>
+									</li><!--
+									--><li>
+										<div class="inner">
+											<div class="price"><div>$250<span>/ month</span></div></div>
+											<dl>
+												<dt>Standard</dt>
+												<dd>Web Design</dd>
+												<dd>Web Development</dd>
+												<dd>Photography</dd>
+												<dd>E-mail Marketing</dd>
+												<dd>Javascript</dd>
+												<dd>PSD to HTML/CSS</dd>
+											</dl>
+											<a href="#" class="button">PURCHASE NOW</a>
+										</div>
+									</li><!--
+									--><li>
+										<div class="inner">
+											<div class="price"><div>$350<span>/ month</span></div></div>
+											<dl>
+												<dt>Professional</dt>
+												<dd>Web Design</dd>
+												<dd>Web Development</dd>
+												<dd>Photography</dd>
+												<dd>E-mail Marketing</dd>
+												<dd>Javascript</dd>
+												<dd>PSD to HTML/CSS</dd>
+											</dl>
+											<a href="#" class="button">PURCHASE NOW</a>
+										</div>
+									</li><!--
+									--><li>
+										<div class="inner">
+											<div class="price"><div>$500<span>/ month</span></div></div>
+											<dl>
+												<dt>Ultimate</dt>
+												<dd>Web Design</dd>
+												<dd>Web Development</dd>
+												<dd>Photography</dd>
+												<dd>E-mail Marketing</dd>
+												<dd>Javascript</dd>
+												<dd>PSD to HTML/CSS</dd>
+											</dl>
+											<a href="#" class="button">PURCHASE NOW</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--/ pricing -->
+					</div>
+				</div>
+	{% endif %}
+
+	{% if lang == 'ru' %}
+				<div class="page-content-section-alt">
+					<div class="grid-row">
+						<!-- pricing -->
+						<div class="block block-pricing">
+							<div class="block-cont">
+								<div class="block-head block-head-1">Наши цены<i class="fa fa-tags"></i></div>
+								<ul>
+									<li>
+										<div class="inner">
+											<div class="price"><div>$100<span>/ month</span></div></div>
+											<dl>
+												<dt>Basic</dt>
+												<dd>Web Design</dd>
+												<dd>Web Development</dd>
+												<dd>Photography</dd>
+												<dd>E-mail Marketing</dd>
+												<dd>Javascript</dd>
+												<dd>PSD to HTML/CSS</dd>
+											</dl>
+											<a href="#" class="button">PURCHASE NOW</a>
+										</div>
+									</li><!--
+									--><li>
+										<div class="inner">
+											<div class="price"><div>$250<span>/ month</span></div></div>
+											<dl>
+												<dt>Standard</dt>
+												<dd>Web Design</dd>
+												<dd>Web Development</dd>
+												<dd>Photography</dd>
+												<dd>E-mail Marketing</dd>
+												<dd>Javascript</dd>
+												<dd>PSD to HTML/CSS</dd>
+											</dl>
+											<a href="#" class="button">PURCHASE NOW</a>
+										</div>
+									</li><!--
+									--><li>
+										<div class="inner">
+											<div class="price"><div>$350<span>/ month</span></div></div>
+											<dl>
+												<dt>Professional</dt>
+												<dd>Web Design</dd>
+												<dd>Web Development</dd>
+												<dd>Photography</dd>
+												<dd>E-mail Marketing</dd>
+												<dd>Javascript</dd>
+												<dd>PSD to HTML/CSS</dd>
+											</dl>
+											<a href="#" class="button">PURCHASE NOW</a>
+										</div>
+									</li><!--
+									--><li>
+										<div class="inner">
+											<div class="price"><div>$500<span>/ month</span></div></div>
+											<dl>
+												<dt>Ultimate</dt>
+												<dd>Web Design</dd>
+												<dd>Web Development</dd>
+												<dd>Photography</dd>
+												<dd>E-mail Marketing</dd>
+												<dd>Javascript</dd>
+												<dd>PSD to HTML/CSS</dd>
+											</dl>
+											<a href="#" class="button">PURCHASE NOW</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--/ pricing -->
+					</div>
+				</div>
+    {% endif %}
+{% endblock %}

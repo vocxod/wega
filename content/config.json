@@ -1,0 +1,13 @@
+{
+    "title": "Заголовок страницы",
+    "description": "Описание содержимого страницы",
+    "user": "admin",
+    "password": "d033e22ae348aeb5660fc2140aec35850c4da997",
+    "theme": "wega",
+    "address": [{"en":"52-6 Bolshevikov"},{"ru":"Большевиков, 52-6"}],
+    "phones": ["+7 812 447-26-91"],
+    "facebook": "http://facebook.com/psbgemholz",
+    "twitter": "http://twitter.com/PsbGemHolz",
+    "email":"info@holz.ru",
+    "url": ""
+}
